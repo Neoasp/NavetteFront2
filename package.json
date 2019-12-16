@@ -16,5 +16,8 @@
     "\"JS\""
   ],
   "author": "\"Neoasp\"",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
 }

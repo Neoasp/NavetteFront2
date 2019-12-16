@@ -1,0 +1,69 @@
+/**
+* Styles.css : styles de base de l'application
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+body {
+    font-family: 'Crimson Text', serif;
+}
+/** ul est un selecteur, fait référence à tous les  <ul></ul>**/
+ul {
+    list-style-type: none;
+}
+
+/** sélécteur qui définit une règle pour l'id date-selector**/
+/** padding = marge interieure, margin = marge exterieure**/
+#date-selector {
+    height: 3em;
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+    font-weight: bold;
+    color: rgba(255,0,0,1);
+}
+
+/** définit une règle pour le énième(nth) div de date-selector**/
+#date-selector div:nth-child(2) {
+    text-align: center;
+}
+
+.btn.btn-outline-default {
+    background-color: rgba(255, 0, 0, 1);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+
+#date-selector div:last-child {
+    text-align: right;
+}
+
+/** sélécteur qui définit une règle pour la classe "tour"**/
+.tour {
+    height: 10em;
+    background-color: rgba(0, 0, 0, 1);
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding: .5em;
+    font-weight: bold;
+    color: rgba(255,0,0,1);
+    border-radius: 2em;
+    text-align: center;
+}
+
+/**selecteur pour la classe "tour bordered"**/
+.tour.bordered {
+    border: solid 1px rgb(255, 0, 0);
+}
+
+.btn.btn-primary {
+    background-color: rgba(255, 0, 0, 1);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: rgb(144, 47, 47);
+    color: rgb(0, 0, 0);
+}
