@@ -1,6 +1,7 @@
 import * as $ from'jquery'; // import jQuery module in Typescript
 import * as moment from 'moment';
 import 'moment/locale/fr';
+import { DatePickerComponent } from './date-picker/date-picker-component';
 moment.locale('fr');
 /**
  * Main
@@ -21,7 +22,16 @@ export class Main {
             success: (data:any) => {
                 currentDate.set(data.currentDateTime);
                 console.log(`Date du jour : ${currentDate.toString()}`);
-                $('span#current-date').html(currentDate.format('D MMMM YYYY'))
+               const initialDate: JQuery = $('span#current-date');
+
+               initialDate.html(currentDate.format('D MMM YYYY'));
+
+               initialDate.data('first', currentDate.toString());
+               initialDate.data('current', currentDate.toString())
+            
+            //set the event components
+            new DatePickerComponent();  
+
                 $('#app-loader').addClass('hidden');
             },
             error: (xhr: any, error: any) => {
