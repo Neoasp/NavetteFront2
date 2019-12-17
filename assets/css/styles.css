@@ -15,17 +15,18 @@ ul {
 /** padding = marge interieure, margin = marge exterieure**/
 #date-selector {
     height: 3em;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(29, 28, 28);
     margin-top: 1em;
     margin-bottom: 1em;
     padding: .5em;
     font-weight: bold;
-    color: rgba(255,0,0,1);
+    color: rgb(250, 36, 36);
 }
 
 /** définit une règle pour le énième(nth) div de date-selector**/
 #date-selector div:nth-child(2) {
     text-align: center;
+    font-size: 1.5em;
 }
 
 .btn.btn-outline-default {
@@ -42,12 +43,12 @@ ul {
 /** sélécteur qui définit une règle pour la classe "tour"**/
 .tour {
     height: 10em;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgb(29, 28, 28);
     margin-top: .5em;
     margin-bottom: .5em;
     padding: .5em;
     font-weight: bold;
-    color: rgba(255,0,0,1);
+    color: rgba(250, 36, 36,1);
     border-radius: 2em;
     text-align: center;
 }
@@ -55,15 +56,21 @@ ul {
 /**selecteur pour la classe "tour bordered"**/
 .tour.bordered {
     border: solid 1px rgb(255, 0, 0);
+    
 }
 
 .btn.btn-primary {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: rgb(241, 173, 173);
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
 .form-control {
-    background-color: rgb(144, 47, 47);
+    background-color: rgb(197, 86, 86);
     color: rgb(0, 0, 0);
 }
+
+span.badge {
+    font-size: 1.5em;
+}
+
