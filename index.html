@@ -10,6 +10,10 @@
      
         <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">   
         <link href="./assets/css/styles.css" rel="stylesheet">
+    
+        <!-- Add scripts -->
+        <script src='./dist/js/app.chunk.js'></script>
+        <script src="./dist/js/app.js"></script>
     </head>
 
     <body>
@@ -18,13 +22,13 @@
             <!--occupe 2 colonnes sur les 12 de la grille d'un ecran-->
             <div class="col-2">
                 <!--ce lien a un rôle de bouton-->
-            <a href="#" title="previous date" class="btn btn-outline-default" role="button">
+            <a href="#" title="previous date" class="btn btn-outline-default disabled" role="button">
                 &lt;&lt;
             </a>
             </div>
 
             <div class="col-8">
-            <span>16 dèc 2019</span>
+            <span id="current-date"></span>
             </div>
 
             <div class="col-2">
@@ -38,8 +42,22 @@
         <main>
             <ul><!-- Tours list of the day-->
                 <li class= "tour" id="tour-1">
-                    <div class="col-2"><span class="badge row">11h00</span></div>
-                <form id="tour-form-1">
+
+                    <div id= 'lign' class="row">
+                        <div class="col-2">
+                        <span class="badge">11h00</span>
+                        </div>
+                        <div class="col-3">
+                        </div>
+                        <div class="col-5">
+                        <span class="places">places dispo :</span>
+                        </div>
+                        <div class="col-2">
+                        <span class="places nb">5</span>
+                        </div>
+                    </div>     
+
+                    <form id="tour-form-1">
                         <select size="1" class="form-control">
                             <option value="" disabled selected>Nb. personnes</option>
                             <option value="1">1</option>
@@ -48,15 +66,19 @@
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
-                    <button type="button" disabled class="btn btn-primary">
-                        Réserver
-                    </button>
-                    <div class="col-2"><span class="places">5</span></div>
+                        
+                            
+                        
+
+                        <button type="button" disabled class="btn btn-primary">
+                            Réserver
+                        </button>    
                     </form>
                 </li>
+
                 <li class= "tour" id="tour-2">
                         <span class="badge">11h00</span>
-                    <form id="tour-form-1">
+                    <form id="tour-form-2">
                             <select size="1" class="form-control">
                                 <option value="" disabled selected>Nb. personnes</option>
                                 <option value="1">1</option>
@@ -73,7 +95,7 @@
                 </li>
                 <li class= "tour bordered" id="tour-3">
                         <span class="badge">14h00</span>
-                    <form id="tour-form-1">
+                    <form id="tour-form-3">
                             <select size="1" class="form-control">
                                 <option value="" disabled selected>Nb. personnes</option>
                                 <option value="1">1</option>
@@ -90,7 +112,7 @@
                 </li>
                 <li class= "tour" id="tour-4">
                         <span class="badge">17h00</span>
-                    <form id="tour-form-1">
+                    <form id="tour-form-4">
                             <select size="1" class="form-control">
                                 <option value="" disabled selected>Nb. personnes</option>
                                 <option value="1">1</option>
@@ -107,6 +129,12 @@
                 </li>
             </ul>
         </main>
+    </div>
+    <!--App loader-->
+    <div id="app-loader" class="outer-loader">
+        <div class="inner-loader">
+            <img src="assets/images/spin2.gif">
+        </div>
     </div>
     </body>
 </html>
