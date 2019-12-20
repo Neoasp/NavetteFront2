@@ -1,0 +1,57 @@
+<div class="outer-modal">
+    <div class="inner-modal">
+
+        <div class="modal-header row">
+            <div class="col-10">
+                </span>>> Réservation pour la navette de : </span>
+                <span id="modalPlaces" data-current=""></span>
+            </div>
+            
+            <div class="col-1">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-10"><span>>> Nombre de passagers : </span><span id="passengers" ></span></div>
+        </div>
+        
+        <div class="modal-body row">
+           <div class= "col-10"><span>>> Tarif à régler pour le voyage : </span><span id="cost" ></span></div>
+        </div>
+
+        <form id="purchase-form"><!--begin form-->
+            <div class="modal-body row">
+                <p id="purchase-detail"></p>
+                
+                <!-- Field:user name-->
+                <div class="form-group col-12">
+                    <label for="user-name" class="required">Votre nom :</label>
+                    <input type="text" id="user-name" class="form-control" name="user-name" onfocus="this.value ='';" onchange="verifForm();">
+                    </div>
+
+                <!-- Field:user email-->
+                <div class="form-group col-12">
+                    <label for="user-email" class="required">Votre email :</label>
+                    <input type="email" id="user-email" class="form-control" name="user-email">
+                </div>
+
+                <!-- CGV switch-->
+                <div class="custom-control custom-switch col-12">
+                    <input type="checkbox" class="custom-control-input" id="cgv-validation">
+                    <label class="custom-control-label " for="cgv-validation">J'accepte les conditions générales</label>
+                  </div>
+            </div>
+
+            <div class="modal-footer row">
+                
+                <button class="btn btn-default close" type="button" role="cancel">
+                    Non merci !
+                </button>
+                <button id="submit" class="btn btn-success" disabled type="submit">
+                    Avec plaisir !
+                </button>
+                
+            </div>
+        </form>
+    </div>
+</div>

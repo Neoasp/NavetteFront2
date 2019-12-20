@@ -2,7 +2,11 @@ import * as $ from'jquery'; // import jQuery module in Typescript
 import * as moment from 'moment';
 import 'moment/locale/fr';
 import { DatePickerComponent } from './date-picker/date-picker-component';
+import { PassengerChoiceComponent } from './passenger-choice/passenger-choice-component';
 moment.locale('fr');
+
+import './scss/main.scss';
+
 /**
  * Main
  * @author Neoasp
@@ -30,12 +34,14 @@ export class Main {
                initialDate.data('current', currentDate.toString())
             
             //set the event components
-            new DatePickerComponent();  
+            new DatePickerComponent();
+            new PassengerChoiceComponent();
+            
 
                 $('#app-loader').addClass('hidden');
             },
             error: (xhr: any, error: any) => {
-                $('#app-loader').addClass('hidden')
+                $('#app-loader').addClass('hidden');
             }
         });
         console.log ('Hello Typescript !');

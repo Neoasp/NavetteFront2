@@ -17,12 +17,12 @@ ul {
 /** padding = marge interieure, margin = marge exterieure**/
 #date-selector {
     height: 3em;
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(109, 216, 82);
     margin-top: 1em;
     margin-bottom: 1em;
     padding: .5em;
     font-weight: bold;
-    color: rgb(250, 36, 36);
+    color: rgb(255, 255, 255);
 }
 
 /** définit une règle pour le énième(nth) div de date-selector**/
@@ -31,10 +31,22 @@ ul {
     font-size: 1.5em;
 }
 
-.btn.btn-outline-default {
-    background-color: rgba(255, 0, 0, 1);
+#date-selector div:first-child {
+    text-align: left;
+    margin: auto;
+    
+}
+[previousDate] {
+    display: block;
+    float: right;
+}
+
+.btn.btn-success {
+    background-color: rgb(42, 161, 58);
     color: rgb(0, 0, 0);
     font-weight: bold;
+    
+    
 
 }
 
@@ -46,35 +58,30 @@ ul {
 /** sélécteur qui définit une règle pour la classe "tour"**/
 .tour {
     height: 10em;
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(109, 216, 82);
     margin-top: .5em;
     margin-bottom: .5em;
     padding: .5em;
     font-weight: bold;
-    color: rgba(250, 36, 36,1);
+    color: rgba(250,255,255,1);
     border-radius: 2em;
     text-align: center;
+    border: solid 2px rgb(0, 0, 0);
     
 }
 #lign div:last-child {
     text-align: left;
 }
 
-/**selecteur pour la classe "tour bordered"**/
-.tour.bordered {
-    border: solid 1px rgb(255, 0, 0);
+/**selecteur pour la classe "btn btn-primary"**/
+.btn.btn-primary {
+    background-color: rgb(42, 161, 58);
+    color: rgb(0, 0, 0);
     
 }
 
-
-.btn.btn-primary {
-    background-color: rgb(241, 173, 173);
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
-
 .form-control {
-    background-color: rgb(197, 86, 86);
+    background-color: rgb(245, 199, 199);
     color: rgb(0, 0, 0);
 }
 
@@ -109,4 +116,7 @@ span.badge {
 }
 #app-loader.hidden {
     display: none;
+}
+.space {
+    height: 1em;
 }

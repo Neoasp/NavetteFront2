@@ -1,0 +1,48 @@
+/**
+*main
+/@author Neoasp
+*9@version 1.0.0
+* Import and load all scss componants
+**/
+/**
+*variables
+*@author Neoasp
+*@version 1.0.0
+**/
+/**
+*mixings
+*Neoasp
+*Usefull functions for lazy people
+**/
+/**
+*modal
+*Design of modal boxes
+**/
+div.outer-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(171, 241, 153, 0.7);
+  font-weight: bold;
+}
+div.outer-modal .inner-modal {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  border: solid 2px black;
+  border-radius: 2em;
+  background-color: #abf199;
+}
+div.outer-modal .inner-modal button[role=cancel].close {
+  font-size: 1em;
+  font-weight: normal;
+}
+div.outer-modal .inner-modal form label.required::after {
+  content: " (*)";
+  color: red;
+}
+
+/*# sourceMappingURL=custom.css.map*/

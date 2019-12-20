@@ -10,6 +10,7 @@
      
         <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">   
         <link href="./assets/css/styles.css" rel="stylesheet">
+        <link href="./assets/css/custom.css" rel="stylesheet">
     
         <!-- Add scripts -->
         <script src='./dist/js/app.chunk.js'></script>
@@ -28,7 +29,7 @@
             </div>
 
             <div class="col-8">
-            <span id="current-date" data-current="" datafirst=""></span>
+            <span id="current-date" data-current="" data-first=""></span>
             </div>
 
             <div class="col-2">
@@ -43,9 +44,9 @@
             <ul><!-- Tours list of the day-->
                 <li class= "tour" id="tour-1">
 
-                    <div id= 'lign' class="row">
+                    <div id= "lign" class="row">
                         <div class="col-2">
-                        <span class="badge">11h00</span>
+                        <span class="badge" time>08h00</span>
                         </div>
                         <div class="col-3">
                         </div>
@@ -53,11 +54,11 @@
                         <span class="places">places dispo :</span>
                         </div>
                         <div class="col-2">
-                        <span class="places nb">5</span>
+                        <span class="places-nb">5</span>
                         </div>
                     </div>     
 
-                    <form id="tour-form-1">
+                    <form id="tour-form-1" genform>
                         <select size="1" class="form-control">
                             <option value="" disabled selected>Nb. personnes</option>
                             <option value="1">1</option>
@@ -65,67 +66,106 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
-                        </select>
-                        
-                            
-                        
-
-                        <button type="button" disabled class="btn btn-primary">
+                        </select>   
+                        <div class="space row"> </div> 
+                        <button type="button" disabled okbutton class="btn btn-primary">
                             Réserver
                         </button>    
                     </form>
                 </li>
 
                 <li class= "tour" id="tour-2">
-                        <span class="badge">11h00</span>
-                    <form id="tour-form-2">
-                            <select size="1" class="form-control">
-                                <option value="" disabled selected>Nb. personnes</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        <button type="button" disabled class="btn btn-primary">
+
+                    <div id= "lign" class="row">
+                        <div class="col-2">
+                        <span class="badge" time>11h00</span>
+                        </div>
+                        <div class="col-3">
+                        </div>
+                        <div class="col-5">
+                        <span class="places">places dispo :</span>
+                        </div>
+                        <div class="col-2">
+                        <span class="places-nb">5</span>
+                        </div>
+                    </div>     
+
+                    <form id="tour-form-2" genform>
+                        <select size="1" class="form-control">
+                            <option value="" disabled selected>Nb. personnes</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>   
+                        <div class="space row"> </div> 
+                        <button type="button" disabled okbutton class="btn btn-primary">
                             Réserver
-                        </button>
-                        <span class="places">places disponibles : 5</span>
-                        </form>
+                        </button>    
+                    </form>
                 </li>
-                <li class= "tour bordered" id="tour-3">
-                        <span class="badge">14h00</span>
-                    <form id="tour-form-3">
-                            <select size="1" class="form-control">
-                                <option value="" disabled selected>Nb. personnes</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        <button type="button" disabled class="btn btn-primary">
+                <li class= "tour" id="tour-3">
+
+                    <div id= "lign" class="row">
+                        <div class="col-2">
+                        <span class="badge" time>14h00</span>
+                        </div>
+                        <div class="col-3">
+                        </div>
+                        <div class="col-5">
+                        <span class="places">places dispo :</span>
+                        </div>
+                        <div class="col-2">
+                        <span class="places-nb">5</span>
+                        </div>
+                    </div>     
+
+                    <form id="tour-form-3" genform>
+                        <select size="1" class="form-control">
+                            <option value="" disabled selected>Nb. personnes</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>   
+                        <div class="space row"> </div> 
+                        <button type="button" disabled okbutton class="btn btn-primary">
                             Réserver
-                        </button>
-                        <span class="places">places disponibles : 5</span>
-                        </form>
+                        </button>    
+                    </form>
                 </li>
                 <li class= "tour" id="tour-4">
-                        <span class="badge">17h00</span>
-                    <form id="tour-form-4">
-                            <select size="1" class="form-control">
-                                <option value="" disabled selected>Nb. personnes</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        <button type="button" disabled class="btn btn-primary">
+
+                    <div id= "lign" class="row">
+                        <div class="col-2">
+                        <span class="badge" time>16h00</span>
+                        </div>
+                        <div class="col-3">
+                        </div>
+                        <div class="col-5">
+                        <span class="places">places dispo :</span>
+                        </div>
+                        <div class="col-2">
+                        <span class="places-nb">5</span>
+                        </div>
+                    </div>     
+
+                    <form id="tour-form-4" genform>
+                        <select size="1" class="form-control">
+                            <option value="" disabled selected>Nb. personnes</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>   
+                        <div class="space row"> </div> 
+                        <button type="button" disabled okbutton class="btn btn-primary">
                             Réserver
-                        </button>
-                        <span class="places">places disponibles : 5</span>
-                        </form>
+                        </button>    
+                    </form>
                 </li>
             </ul>
         </main>

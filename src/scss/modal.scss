@@ -1,0 +1,38 @@
+/**
+*modal
+*Design of modal boxes
+**/
+//on s'adresse à une div dans laquelle la classe outer-modal a été définie
+div {
+    &.outer-modal{ // <=> div.outer-modal
+         @include outer;
+        background-color: rgba($modal_background_color, 70%);
+        font-weight: bold;
+        .inner-modal {
+            @include vertical-center;
+            @include inner;
+            background-color: lighten($modal_background_color, 0%);
+            button[role="cancel"] {
+                &.close {
+                    font-size: 1em;
+                    font-weight: normal;
+                }
+            }
+            form {
+                label {
+                    &.required {
+                        &::after {//permet d'ajouter du contenu qui n'existe pas encore après la classe label.required
+                            content: " (*)";
+                            color: red;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        
+    }
+    
+}
+

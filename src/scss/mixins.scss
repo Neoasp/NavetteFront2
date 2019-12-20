@@ -1,0 +1,24 @@
+/**
+*mixings
+*Neoasp
+*Usefull functions for lazy people
+**/
+
+@mixin outer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+@mixin vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin inner {
+    margin: 0 auto;
+    border: ($modal_border);
+    border-radius: 2em;
+}
